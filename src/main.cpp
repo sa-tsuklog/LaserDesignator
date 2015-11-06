@@ -13,7 +13,7 @@
 #include "MyLib/Stdout/Driver/USART2.h"
 
 #include "App/VoltageMonitor.h"
-#include "App/ThermoMonitor.h"
+#include "App/Ignitor.h"
 #include "MyLib/WaveGenerator/Driver/TIM3.h"
 
 void prvTaskA(void* pvParameters){
@@ -34,7 +34,7 @@ int main(void) {
 	//xTaskCreate(prvTaskA,"test",1024,NULL,1,NULL);
 	Stdout::initStdout();
 	VoltageMonitor::initVoltageMonitor();
-	ThermoMonitor::initThermoMonitor();
+	Ignitor::initIgnitor();
 	TIM3Class::GetInstance();
 	
 	vTaskStartScheduler();

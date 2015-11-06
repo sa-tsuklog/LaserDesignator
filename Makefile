@@ -6,7 +6,8 @@ MYLIBPATH = src/MyLib/ \
 			src/MyLib/Led src/MyLib/Led/Driver \
 			src/MyLib/WaveGenerator src/MyLib/WaveGenerator/Driver \
 			src/MyLib/ThermoCouple src/MyLib/ThermoCouple/Driver \
-			src/MyLib/Servo src/MyLib/Servo/Driver 
+			src/MyLib/Servo src/MyLib/Servo/Driver \
+			 src/MyLib/Switch src/MyLib/Switch/Driver
 COMPATH   = src/Common src/Common/FreeRTOS_DemoFile
 APPPATH = src/App
 ###
