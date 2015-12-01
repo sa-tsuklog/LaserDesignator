@@ -29,7 +29,7 @@ private:
 	static const float SERVO1_UNLOCK_POS = 0.3;
 	
 	static const int MS_CYCLE = 100;
-	static const int MS_SWICH_DELAY = 2000;
+	static const int MS_SWICH_DELAY = 1000;
 	static const int MS_UNLOCK_HOLD_TIME = 2000;
 	
 	void IgnitorTask();
