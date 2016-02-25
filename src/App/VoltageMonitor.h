@@ -23,7 +23,7 @@ public:
 
 	// Class definition
 private:
-	static const uint32_t MV_ALART_VOLTAGE = 7200; 
+	static const uint32_t MV_ALART_VOLTAGE = 9200; 
 	
 	uint32_t mvOffset = 500;
 	uint32_t VoltageMonitor::getMvVoltage();

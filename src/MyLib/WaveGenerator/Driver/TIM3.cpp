@@ -40,7 +40,7 @@ TIM3Class::TIM3Class(){
 	TIM_TimeBaseStructInit(&timebase);
 	timebase.TIM_ClockDivision = TIM_CKD_DIV1;
 	timebase.TIM_Prescaler = 48-1;
-	timebase.TIM_Period = 1000-1;
+	timebase.TIM_Period = 4000-1;
 	timebase.TIM_CounterMode = TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIM3,&timebase);
 	
@@ -49,7 +49,7 @@ TIM3Class::TIM3Class(){
 	oc1def.TIM_OCMode = TIM_OCMode_PWM1;
 	oc1def.TIM_OutputState = TIM_OutputState_Enable;
 	oc1def.TIM_OCPolarity = TIM_OCPolarity_High;
-	oc1def.TIM_Pulse = 500-1;
+	oc1def.TIM_Pulse = 2000-1;
 	TIM_OC1Init(TIM3,&oc1def);
 	
 	GPIO_SetBits(GPIOA,GPIO_Pin_7);
