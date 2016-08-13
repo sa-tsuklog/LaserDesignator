@@ -23,9 +23,9 @@ public:
 
 	// Class definition
 private:
-	static const float SERVO0_LOCK_POS = -0.2;
+	static const float SERVO0_LOCK_POS = -0.8;
 	static const float SERVO0_UNLOCK_POS = 0.7;
-	static const float SERVO1_LOCK_POS = -0.2;
+	static const float SERVO1_LOCK_POS = -0.8;
 	static const float SERVO1_UNLOCK_POS = 0.7;
 	
 	static const int MS_CYCLE = 100;
